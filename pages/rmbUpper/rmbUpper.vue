@@ -15,6 +15,7 @@
 		<view v-if='clicked' class="text-xl margin-top">
 			您的bmi是：{{bmi}}
 		</view>
+		<button class='cu-tag radius shareBtn bg-gradual-green' open-type="share">分享</button>
 	</view>
 </template>
 
@@ -61,9 +62,17 @@
 			run: function() {
 				this.highNum = smalltoBIG(this.lowNum)
 			}
+		},
+		onShareAppMessage: function(options) {
+			console.log('分享的代码！！')
 		}
 	}
 </script>
 
 <style lang="scss">
+	.shareBtn {
+		position: fixed;
+		bottom: 300rpx;
+		right: 10rpx;
+	}
 </style>

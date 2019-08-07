@@ -14,6 +14,7 @@
 		</view>
 		<button class="bg-green margin-top" @click="chufa">生成随机数</button>
 		<view v-if='hasClicked' class="text-xl margin-top">生成的随机数是: {{ sui }}</view>
+		<button class='cu-tag radius shareBtn bg-gradual-green' open-type="share">分享</button>
 	</view>
 </template>
 
@@ -43,10 +44,17 @@
 				this.sui = Array.from(num).sort((x, y) => x - y).join(", ")
 				this.hasClicked = true
 			}
+		},
+		onShareAppMessage: function(options) {
+			console.log('分享的代码！！')
 		}
 	}
 </script>
 
 <style>
-
+	.shareBtn {
+		position: fixed;
+		bottom: 300rpx;
+		right: 10rpx;
+	}
 </style>
