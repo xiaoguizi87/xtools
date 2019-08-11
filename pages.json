@@ -20,6 +20,10 @@
             "path" : "pages/rmbUpper/rmbUpper",
             "style" : {}
         }
+        ,{
+            "path" : "pages/joke/joke",
+            "style" : {}
+        }
     ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
