@@ -10,6 +10,7 @@
 						Vue.prototype.CustomBar = e.statusBarHeight + 50;
 					} else {
 						Vue.prototype.CustomBar = e.statusBarHeight + 45;
+						xxxxx
 					};
 					// #endif
 
